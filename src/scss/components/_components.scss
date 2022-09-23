@@ -7,9 +7,36 @@ header {
 }
 
 .content {
+  outline: 1px solid red;
+  &_image {
+    height: 300px;
+
+    img {
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
   &_text-container {
     outline: 1px solid red;
-    flex-basis: 110%;
+    flex-basis: 70%;
+
+    p,
+    h2 {
+      margin-inline: auto;
+    }
+
+    p {
+      width: 45ch;
+      text-align: justify;
+    }
+
+    h2 {
+      width: 28ch;
+      text-align: center;
+    }
   }
 }
 
