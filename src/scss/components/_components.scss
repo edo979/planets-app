@@ -5,3 +5,14 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+.content {
+  &_image {
+    flex-basis: 100px;
+  }
+
+  &_text-container {
+    outline: 1px solid red;
+    flex-basis: 66%;
+  }
+}
