@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import './scss/style.scss'
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
           </ul>
         </nav>
       </header>
-      <main></main>
+
+      <Outlet />
     </>
   )
 }
