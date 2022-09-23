@@ -1,13 +1,22 @@
 @use 'navbar';
 
+body {
+  background-color: black;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  h1 a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .content {
-  outline: 1px solid red;
+  //outline: 1px solid red;
   &_image {
     height: 300px;
 
@@ -20,7 +29,7 @@ header {
   }
 
   &_text-container {
-    outline: 1px solid red;
+    //outline: 1px solid red;
     flex-basis: 70%;
 
     p,
@@ -46,7 +55,7 @@ header {
 }
 
 .box {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: 2px solid #999;
 
   background-color: #333;

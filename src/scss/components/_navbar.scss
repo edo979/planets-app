@@ -7,6 +7,8 @@
     display: flex;
     justify-content: end;
     gap: 0.5rem;
+
+    padding-inline-end: 0.5rem;
   }
 
   &_item {
@@ -19,8 +21,9 @@
   &_link {
     display: block;
 
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
     color: white;
+    text-transform: uppercase;
     text-decoration: none;
   }
 }

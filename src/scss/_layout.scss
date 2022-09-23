@@ -1,10 +1,10 @@
 #root {
-  > * {
-    outline: 1px solid orange;
-  }
+  // > * {
+  //   outline: 1px solid orange;
+  // }
 
   padding: 1rem;
-  max-width: 900px;
+  max-width: 930px;
   margin-inline: auto;
 }
 
@@ -13,4 +13,15 @@
   align-items: var(--f-align, center);
   justify-content: var(--f-justify, space-between);
   gap: var(--f-gap, 1rem);
+}
+
+//Utility
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2.5rem;
+}
+.mt-3 {
+  margin-top: 5rem;
 }
