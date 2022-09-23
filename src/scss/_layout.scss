@@ -1,7 +1,14 @@
-#root > * {
-  outline: 1px solid orange;
+#root {
+  > * {
+    outline: 1px solid orange;
+  }
+
+  padding: 1rem;
 }
 
 .flex {
   display: flex;
+  align-items: var(--f-align, center);
+  justify-content: var(--f-justify, space-between);
+  gap: var(--f-gap, 1rem);
 }

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 function Navigation() {
   return (
     <ul className="navbar_list">
-      <li className="navbar_item">
+      <li className="navbar_item skew-box">
         <NavLink
           to={'/mercury'}
           className={({ isActive }) =>
@@ -13,7 +13,7 @@ function Navigation() {
           Mercury
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/venus'}
           className={({ isActive }) =>
@@ -23,7 +23,7 @@ function Navigation() {
           Venus
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/earth'}
           className={({ isActive }) =>
@@ -33,7 +33,7 @@ function Navigation() {
           Earth
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/mars'}
           className={({ isActive }) =>
@@ -43,7 +43,7 @@ function Navigation() {
           Mars
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/jupiter'}
           className={({ isActive }) =>
@@ -53,7 +53,7 @@ function Navigation() {
           Jupiter
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/saturn'}
           className={({ isActive }) =>
@@ -63,7 +63,7 @@ function Navigation() {
           Saturn
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/uranus'}
           className={({ isActive }) =>
@@ -73,7 +73,7 @@ function Navigation() {
           Uranus
         </NavLink>
       </li>
-      <li className="navbar_item">
+      <li className="navbar_item  skew-box">
         <NavLink
           to={'/neptune'}
           className={({ isActive }) =>

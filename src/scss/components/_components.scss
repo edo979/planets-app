@@ -7,12 +7,31 @@ header {
 }
 
 .content {
-  &_image {
-    flex-basis: 100px;
-  }
-
   &_text-container {
     outline: 1px solid red;
-    flex-basis: 66%;
+    flex-basis: 110%;
+  }
+}
+
+.boxes {
+  --f-gap: 1rem;
+  --f-justify: center;
+}
+
+.box {
+  padding: 0.5rem 1rem;
+  border: 2px solid #999;
+
+  background-color: #333;
+  color: #999;
+}
+
+// Utility
+.skew-box {
+  --t-skew: 30deg;
+  transform: skew(calc(var(--t-skew) * -1));
+
+  > * {
+    transform: skew(var(--t-skew));
   }
 }
