@@ -1,12 +1,14 @@
-import { Outlet } from 'react-router-dom'
-import Navigation from './Navigation'
+import { Outlet, Link } from 'react-router-dom'
+import Navigation from './components/Navigation'
 import './scss/style.scss'
 
 function App() {
   return (
     <>
       <header>
-        <h1>Planets</h1>
+        <h1>
+          <Link to={'/'}>Planets</Link>
+        </h1>
         <nav className="navbar">
           <Navigation />
         </nav>

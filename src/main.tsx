@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import App from './App'
-import Home from './Home'
-import Planet from './Planet'
+import Home from './pages/Home'
+import Planet from './pages/Planet'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
