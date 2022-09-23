@@ -1,0 +1,30 @@
+.navbar {
+  --t-skew: 30deg;
+  flex-grow: 1;
+
+  &_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+  }
+
+  &_item {
+    padding: 0.2rem 0.85rem;
+    transform: skew(calc(var(--t-skew) * -1));
+
+    background-color: blue;
+    border: 2px solid red;
+  }
+
+  &_link {
+    display: block;
+    transform: skew(var(--t-skew));
+
+    color: white;
+    text-decoration: none;
+  }
+}

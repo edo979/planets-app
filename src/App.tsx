@@ -1,3 +1,5 @@
+import './scss/style.scss'
+
 function App() {
   return (
     <>
@@ -9,15 +11,23 @@ function App() {
               <a href="#" className="navbar_link">
                 Planet
               </a>
+            </li>
+            <li className="navbar_item">
               <a href="#" className="navbar_link">
                 Planet
               </a>
+            </li>
+            <li className="navbar_item">
               <a href="#" className="navbar_link">
                 Planet
               </a>
+            </li>
+            <li className="navbar_item">
               <a href="#" className="navbar_link">
                 Planet
               </a>
+            </li>
+            <li className="navbar_item">
               <a href="#" className="navbar_link">
                 Planet
               </a>
