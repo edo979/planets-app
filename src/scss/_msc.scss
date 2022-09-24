@@ -15,6 +15,8 @@
   --clr-primary-400: 187, 100%, 40%;
   --clr-primary-500: 213, 65%, 33%;
 
+  --clr-primary: var(--clr-primary-500);
+
   --clr-neutral-100: 0, 0%, 0%;
   --clr-neutral-200: 200, 68%, 14%;
   --clr-neutral-500: 0, 0%, 60%;
@@ -35,6 +37,8 @@ h1,
 h2,
 h3 {
   font-family: 'Bebas Neue', cursive;
+  color: hsl(var(--clr-primary));
+  text-shadow: 0 0 5px black, 0 0 5px hsl(var(--clr-primary));
 }
 
 h1 {

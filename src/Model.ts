@@ -88,3 +88,17 @@ export const planets: Planet[] = [
     ],
   },
 ]
+
+export const getColors = (planet: string | undefined): string => {
+  const defaultClr = '--clr-primary-400'
+
+  if (!planet) return defaultClr
+
+  switch (planet) {
+    case 'mercury':
+      return '--clr-primary-100'
+
+    default:
+      return defaultClr
+  }
+}

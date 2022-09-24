@@ -11,7 +11,7 @@ header {
 
   h1 a {
     text-decoration: none;
-    color: hsl(var(--clr-neutral-900));
+    color: inherit;
   }
 }
 
@@ -56,10 +56,10 @@ header {
 
 .box {
   padding: 0.5rem 1.5rem;
-  border: 2px solid hsl(var(--clr-primary, 0, 100%, 40%));
+  border: 2px solid hsl(var(--clr-primary));
 
-  background-color: hsl(var(--crl-secondary, 200, 68%, 14%));
-  color: hsl(var(--clr-neutral-500));
+  background-color: hsl(var(--clr-primary), 0.125);
+  color: hsl(var(--clr-primary));
 }
 
 footer {
@@ -77,4 +77,8 @@ footer {
   > * {
     transform: skew(var(--t-skew));
   }
+}
+
+.b-shadow {
+  box-shadow: 0 0 10px 2px hsl(var(--clr-primary), 0.5);
 }

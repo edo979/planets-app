@@ -1,9 +1,20 @@
-import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
+import { NavLink, useParams } from 'react-router-dom'
+import { getColors } from '../Model'
 
 function Navigation() {
+  const { planet } = useParams()
+
+  // useEffect(() => {
+  //   document.documentElement.style.setProperty(
+  //     '--clr-primary',
+  //     getColors(planet)
+  //   )
+  // }, [planet])
+
   return (
     <ul className="navbar_list">
-      <li className="navbar_item skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/mercury'}
           className={({ isActive }) =>
@@ -13,7 +24,7 @@ function Navigation() {
           Mercury
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/venus'}
           className={({ isActive }) =>
@@ -23,7 +34,7 @@ function Navigation() {
           Venus
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/earth'}
           className={({ isActive }) =>
@@ -33,7 +44,7 @@ function Navigation() {
           Earth
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/mars'}
           className={({ isActive }) =>
@@ -43,7 +54,7 @@ function Navigation() {
           Mars
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/jupiter'}
           className={({ isActive }) =>
@@ -53,7 +64,7 @@ function Navigation() {
           Jupiter
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/saturn'}
           className={({ isActive }) =>
@@ -63,7 +74,7 @@ function Navigation() {
           Saturn
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/uranus'}
           className={({ isActive }) =>
@@ -73,7 +84,7 @@ function Navigation() {
           Uranus
         </NavLink>
       </li>
-      <li className="navbar_item  skew-box">
+      <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/neptune'}
           className={({ isActive }) =>

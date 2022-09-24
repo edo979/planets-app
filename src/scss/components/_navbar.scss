@@ -14,15 +14,15 @@
   &_item {
     padding: 0.2rem 0.85rem;
 
-    background-color: hsl(var(--crl-secondary, 200, 68%, 14%));
-    border: 2px solid hsl(var(--clr-primary, 0, 100%, 40%));
+    background-color: hsl(var(--clr-primary), 0.2);
+    border: 2px solid hsl(var(--clr-primary));
   }
 
   &_link {
     display: block;
 
     font-size: var(--fs-200);
-    color: hsl(var(--clr-neutral-900));
+    color: hsl(var(--clr-primary-300));
     text-transform: uppercase;
     text-decoration: none;
   }

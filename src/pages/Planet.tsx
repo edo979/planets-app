@@ -23,22 +23,22 @@ function Planet() {
       </section>
 
       <section className="boxes | flex mt-1">
-        <div className="box skew-box">
+        <div className="box | skew-box b-shadow">
           <h3>Age:</h3>
           <p>4.543 billion years</p>
         </div>
 
-        <div className="box skew-box">
+        <div className="box | skew-box b-shadow">
           <h3>Distance from Sun:</h3>
           <p>149.6 million km</p>
         </div>
 
-        <div className="box skew-box">
+        <div className="box | skew-box b-shadow">
           <h3>Radius:</h3>
           <p>6,371 km</p>
         </div>
 
-        <div className="box skew-box">
+        <div className="box | skew-box b-shadow">
           <h3>Mass:</h3>
           <p>5.972 × 10^24 kg</p>
         </div>
