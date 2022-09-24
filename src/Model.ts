@@ -96,7 +96,22 @@ export const getColors = (planet: string | undefined): string => {
 
   switch (planet) {
     case 'mercury':
+    case 'mars':
+    case 'uranus':
       return '--clr-primary-100'
+
+    case 'venus':
+      return '--clr-primary-200'
+
+    case 'earth':
+      return '--clr-primary-500'
+
+    case 'jupiter':
+    case 'saturn':
+      return '--clr-primary-200'
+
+    case 'neptun':
+      return '--clr-primary-400'
 
     default:
       return defaultClr

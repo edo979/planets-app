@@ -5,12 +5,12 @@ import { getColors } from '../Model'
 function Navigation() {
   const { planet } = useParams()
 
-  // useEffect(() => {
-  //   document.documentElement.style.setProperty(
-  //     '--clr-primary',
-  //     getColors(planet)
-  //   )
-  // }, [planet])
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--clr-primary',
+      `var(${getColors(planet)})`
+    )
+  }, [planet])
 
   return (
     <ul className="navbar_list">
