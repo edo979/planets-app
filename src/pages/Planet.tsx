@@ -5,7 +5,7 @@ function Planet() {
 
   return (
     <main>
-      <section className="content | flex mt-2">
+      <section className="content | flex">
         <aside className="content_image">
           <img src="assets/images/earth.jpg" alt={planet} />
         </aside>
@@ -22,7 +22,7 @@ function Planet() {
         </article>
       </section>
 
-      <section className="boxes | flex mt-2">
+      <section className="boxes | flex mt-1">
         <div className="box skew-box">
           <h3>Age:</h3>
           <p>4.543 billion years</p>

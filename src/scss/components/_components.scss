@@ -18,7 +18,7 @@ header {
 .content {
   //outline: 1px solid red;
   &_image {
-    height: 300px;
+    height: 400px;
 
     img {
       height: 100%;
@@ -56,10 +56,17 @@ header {
 
 .box {
   padding: 0.5rem 1.5rem;
-  border: 2px solid #999;
+  border: 2px solid hsl(var(--clr-primary, 0, 100%, 40%));
 
-  background-color: #333;
+  background-color: hsl(var(--crl-secondary, 200, 68%, 14%));
   color: hsl(var(--clr-neutral-500));
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  text-align: right;
+  opacity: 0.8;
 }
 
 // Utility
