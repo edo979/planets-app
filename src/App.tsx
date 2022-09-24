@@ -2,19 +2,6 @@ import { Outlet, Link } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import './scss/style.scss'
 
-const planets = [
-  {
-    name: 'mercury',
-    desc: `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.`,
-    data: [
-      ['Distance from Sun', '58 million km'],
-      ['Radius', '2,439.7 km'],
-      ['Mass', '3.285 × 10^23 kg (0.055 M⊕)'],
-      ['Surface area', '74.8 million km²'],
-    ],
-  },
-]
-
 function App() {
   return (
     <>
