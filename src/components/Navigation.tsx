@@ -4,9 +4,10 @@ import { getColors } from '../Model'
 
 type Props = {
   isVisible: Boolean
+  hideNav: () => void
 }
 
-function Navigation({ isVisible }: Props) {
+function Navigation({ isVisible, hideNav }: Props) {
   const { planet } = useParams()
 
   useEffect(() => {
@@ -14,6 +15,7 @@ function Navigation({ isVisible }: Props) {
       '--clr-primary',
       `var(${getColors(planet)})`
     )
+    hideNav()
   }, [planet])
 
   return (

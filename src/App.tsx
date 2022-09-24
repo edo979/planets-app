@@ -6,6 +6,8 @@ import './scss/style.scss'
 function App() {
   const [toggleNav, setToggleNav] = useState<Boolean>(false)
 
+  const hideNav = (): void => setToggleNav(false)
+
   return (
     <>
       <header>
@@ -13,7 +15,7 @@ function App() {
           <Link to={'/'}>Planets</Link>
         </h1>
         <nav className="navbar">
-          <Navigation isVisible={toggleNav} />
+          <Navigation isVisible={toggleNav} hideNav={hideNav} />
         </nav>
         <button
           className="navbar_toggle"
