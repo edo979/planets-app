@@ -38,7 +38,7 @@ h2,
 h3 {
   font-family: 'Bebas Neue', cursive;
   color: hsl(var(--clr-primary));
-  text-shadow: 0 0 5px black, 0 0 5px hsl(var(--clr-primary));
+  text-shadow: 0 0 15px hsl(var(--clr-primary), 0.2);
 }
 
 h1 {

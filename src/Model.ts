@@ -35,10 +35,10 @@ export const planets: Planet[] = [
     img: 'assets/images/earth.jpg',
     desc: `Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers.`,
     data: [
-      ['Age', '4.543 billion years'],
       ['Distance from Sun', '149.6 million km'],
       ['Radius', '6,371 km'],
       ['Mass', '5.972 × 10^24 kg'],
+      ['Age', '4.543 billion years'],
     ],
   },
   {
@@ -68,10 +68,10 @@ export const planets: Planet[] = [
     img: 'assets/images/saturn.jpg',
     desc: `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.`,
     data: [
-      ['Age', '4.503 billion years'],
       ['Distance from Sun', '1.434 billion km'],
       ['Radius', '58,232 km'],
       ['Mass', '5.683 × 10^26 kg (95.16 M⊕)'],
+      ['Age', '4.503 billion years'],
     ],
   },
   {
