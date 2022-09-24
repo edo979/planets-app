@@ -1,7 +1,7 @@
 @use 'navbar';
 
 body {
-  background-color: black;
+  background-color: hsl(var(--clr-neutral-100));
 }
 
 header {
@@ -11,7 +11,7 @@ header {
 
   h1 a {
     text-decoration: none;
-    color: white;
+    color: hsl(var(--clr-neutral-900));
   }
 }
 
@@ -59,7 +59,7 @@ header {
   border: 2px solid #999;
 
   background-color: #333;
-  color: #999;
+  color: hsl(var(--clr-neutral-500));
 }
 
 // Utility
