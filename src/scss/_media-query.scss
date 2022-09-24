@@ -1,8 +1,9 @@
 @media (max-width: 50em) {
   .navbar {
     &_list {
+      display: none;
       position: absolute;
-      z-index: 5;
+      z-index: 2;
       inset: 0 0 auto;
 
       flex-direction: column;
@@ -12,6 +13,10 @@
       background-color: hsl(var(--clr-neutral-100));
       box-shadow: 0 20px 20px hsl(var(--clr-neutral-100), 0.8),
         0 2px 5px hsl(var(--clr-neutral-100));
+
+      &.show {
+        display: flex;
+      }
     }
 
     &_item {
@@ -19,6 +24,11 @@
       padding-block: 0.5rem;
       margin-inline: auto;
       text-align: center;
+    }
+
+    &_toggle {
+      display: block;
+      z-index: 3;
     }
   }
 }

@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import './scss/style.scss'
 
 function App() {
+  const [toggleNav, setToggleNav] = useState<Boolean>(false)
+
   return (
     <>
       <header>
@@ -10,8 +13,12 @@ function App() {
           <Link to={'/'}>Planets</Link>
         </h1>
         <nav className="navbar">
-          <Navigation />
+          <Navigation isVisible={toggleNav} />
         </nav>
+        <button
+          className="navbar_toggle"
+          onClick={() => setToggleNav((prev) => !prev)}
+        ></button>
       </header>
 
       <Outlet />

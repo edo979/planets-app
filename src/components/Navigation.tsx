@@ -2,7 +2,11 @@ import { useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import { getColors } from '../Model'
 
-function Navigation() {
+type Props = {
+  isVisible: Boolean
+}
+
+function Navigation({ isVisible }: Props) {
   const { planet } = useParams()
 
   useEffect(() => {
@@ -13,7 +17,7 @@ function Navigation() {
   }, [planet])
 
   return (
-    <ul className="navbar_list">
+    <ul className={`navbar_list ${isVisible ? 'show' : ''}`}>
       <li className="navbar_item | skew-box b-shadow">
         <NavLink
           to={'/mercury'}

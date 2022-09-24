@@ -26,4 +26,21 @@
     text-transform: uppercase;
     text-decoration: none;
   }
+
+  &_toggle {
+    display: none;
+    padding: 0;
+    border: 20px double transparent;
+    border-top-color: hsl(var(--clr-primary));
+    translate: 0 25%;
+
+    background: none;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      border-style: solid;
+    }
+  }
 }
