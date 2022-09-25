@@ -108,4 +108,15 @@
   .box {
     width: 100%;
   }
+
+  .card-list {
+    gap: 0.25rem;
+    --f-gap: 0.5rem;
+  }
+  .card {
+    padding: 0.5rem;
+    h2 {
+      font-size: var(--fs-400);
+    }
+  }
 }
