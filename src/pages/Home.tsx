@@ -6,10 +6,10 @@ function Home() {
     <main>
       <ul className="card-list | mt-2">
         {planets.map(({ name, img }) => (
-          <li key={name} className={`card | b-shadow planet_${name}`}>
+          <li key={name} className={`card | b-shadow planet-${name}`}>
             <Link to={`/${name}`} className="flex">
               <div className="card_image">
-                <img src={img} alt={name} />
+                <img src={img} alt={name} className="image-cover" />
               </div>
 
               <div className="card_body">
