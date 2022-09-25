@@ -126,7 +126,7 @@ export const getColors = (planet: string | undefined): string => {
     case 'uranus':
       return '--clr-primary-300'
 
-    case 'neptun':
+    case 'neptune':
     case 'venus':
       return '--clr-primary-400'
 
