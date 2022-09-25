@@ -40,6 +40,14 @@
 }
 
 @media (max-width: 38em) {
+  //Typography
+  :root {
+    --fs-400: 0.9rem;
+    --fs-600: 1.15rem;
+    --fs-700: 1.55rem;
+    --fs-800: 2rem;
+  }
+
   //Layout
   #root {
     width: min(100%, 375px);
@@ -64,11 +72,12 @@
   .navbar {
     &_list {
       display: none;
-      position: absolute;
+      position: fixed;
       z-index: 2;
-      inset: 0 0 auto;
+      inset: 0;
 
       flex-direction: column;
+      flex-wrap: nowrap;
       gap: 1rem;
       padding: 3rem 0;
 
@@ -82,7 +91,7 @@
     }
 
     &_item {
-      width: 100px;
+      width: 120px;
       padding-block: 0.5rem;
       margin-inline: auto;
       text-align: center;

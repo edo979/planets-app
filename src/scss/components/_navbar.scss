@@ -12,16 +12,21 @@
   }
 
   &_item {
-    padding: 0.2rem 0.85rem;
-
     background-color: hsl(var(--clr-primary), 0.2);
     border: 2px solid hsl(var(--clr-primary));
+
+    &:hover,
+    &:focus {
+      scale: 1.08;
+      outline: 1px solid hsl(var(--clr-neutral-900));
+    }
   }
 
   &_link {
     display: block;
+    padding: 0.2rem 0.85rem;
 
-    font-size: var(--fs-200);
+    font-size: var(--fs-300);
     color: hsl(var(--clr-primary-300));
     text-transform: uppercase;
     text-decoration: none;
