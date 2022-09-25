@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Article from '../components/Article'
 import { Planet as PlanetType, planets } from '../Model'
 
 function Planet() {
@@ -12,16 +13,7 @@ function Planet() {
 
   return (
     <main>
-      <section className="content | flex">
-        <aside className="content_image">
-          <img src={planetData?.img} alt={planet} />
-        </aside>
-
-        <article className="content_text-container">
-          <h2 className="content_title">{planetData?.name}</h2>
-          <p className="content_text">{planetData?.desc}</p>
-        </article>
-      </section>
+      <Article content={planetData} />
 
       <section className="boxes | flex mt-1">
         {planetData?.data.map((data) => (

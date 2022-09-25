@@ -9,6 +9,17 @@ export type Planet = {
 
 export const planets: Planet[] = [
   {
+    name: 'sun',
+    img: 'assets/images/sun.jpg',
+    desc: `The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.`,
+    data: [
+      ['Distance from Sun', '58 million km'],
+      ['Radius', '2,439.7 km'],
+      ['Mass', '3.285 × 10^23 kg (0.055 M⊕)'],
+      ['Surface area', '74.8 million km²'],
+    ],
+  },
+  {
     name: 'mercury',
     img: 'assets/images/mercury.jpg',
     desc: `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.`,
@@ -99,7 +110,7 @@ export const planets: Planet[] = [
 ]
 
 export const getColors = (planet: string | undefined): string => {
-  const defaultClr = '--clr-primary-400'
+  const defaultClr = '--clr-primary-100'
 
   if (!planet) return defaultClr
 
