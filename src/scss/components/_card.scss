@@ -1,0 +1,26 @@
+.card-list {
+  padding: 0;
+  margin-inline: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 0.5rem;
+  a {
+    text-decoration: none;
+  }
+}
+
+.card {
+  --f-direction: column;
+
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: hsl(var(--clr-primary-100), 0.25);
+
+  h2 {
+    padding: 1rem;
+    font-size: var(--fs-600);
+    text-align: center;
+  }
+}
