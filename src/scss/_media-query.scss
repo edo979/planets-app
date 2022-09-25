@@ -1,4 +1,25 @@
-@media (max-width: 50em) {
+@media (max-width: 35em) {
+  //Layout
+  #root {
+    width: min(100%, 375px);
+  }
+
+  .content {
+    --f-direction: column;
+
+    h2,
+    p {
+      width: 100%;
+    }
+  }
+
+  .boxes {
+    --f-direction: column;
+    padding-inline: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  //Components
   .navbar {
     &_list {
       display: none;
@@ -30,5 +51,9 @@
       display: block;
       z-index: 3;
     }
+  }
+
+  .box {
+    width: 100%;
   }
 }

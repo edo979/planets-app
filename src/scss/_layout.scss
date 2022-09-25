@@ -1,10 +1,6 @@
 #root {
-  // > * {
-  //   outline: 1px solid orange;
-  // }
-
   padding: 1rem;
-  max-width: 930px;
+  width: min(100%, 930px);
   margin-inline: auto;
 }
 
