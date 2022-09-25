@@ -13,10 +13,10 @@ export const planets: Planet[] = [
     img: 'assets/images/sun.jpg',
     desc: `The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.`,
     data: [
-      ['Distance from Sun', '58 million km'],
-      ['Radius', '2,439.7 km'],
-      ['Mass', '3.285 × 10^23 kg (0.055 M⊕)'],
-      ['Surface area', '74.8 million km²'],
+      ['Distance to Earth', '149.6 million km'],
+      ['Radius', '696,340 km'],
+      ['Surface temperature', '5504.85 °C'],
+      ['Age', '4.603 billion years'],
     ],
   },
   {
