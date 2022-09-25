@@ -16,13 +16,6 @@ header {
   //outline: 1px solid red;
   &_image {
     height: 400px;
-
-    img {
-      height: 100%;
-
-      object-fit: cover;
-      object-position: center;
-    }
   }
 
   &_text-container {

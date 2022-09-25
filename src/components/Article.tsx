@@ -8,7 +8,7 @@ function Article({ content }: Props) {
   return (
     <section className="content | flex">
       <aside className="content_image">
-        <img src={content?.img} alt={content?.name} />
+        <img src={content?.img} alt={content?.name} className="image-cover" />
       </aside>
 
       <article className="content_text-container">
