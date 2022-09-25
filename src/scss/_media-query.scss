@@ -1,4 +1,45 @@
-@media (max-width: 35em) {
+@media (max-width: 56em) {
+  //Layout
+  header {
+    --f-gap: 3rem;
+  }
+  .content {
+    --f-direction: row;
+
+    h2,
+    p {
+      width: 100%;
+    }
+  }
+
+  //Components
+  .navbar {
+    &_list {
+      flex-wrap: wrap;
+    }
+
+    &_item {
+      flex: 1 20%;
+    }
+  }
+
+  .content {
+    --f-gap: 0;
+  }
+
+  .boxes {
+    margin-top: 2rem;
+    margin-inline: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 1 48%;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 38em) {
   //Layout
   #root {
     width: min(100%, 375px);

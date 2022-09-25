@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className="flex">
         <h1>
           <Link to={'/'}>Planets</Link>
         </h1>
