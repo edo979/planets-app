@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import { planets } from '../Model'
+import { getPlanets } from '../Model'
 
 function Home() {
   return (
     <main>
       <ul className="card-list | mt-2">
-        {planets.map(({ name, img }) => (
+        {getPlanets('EN').map(({ name, img }) => (
           <li key={name} className={`card | b-shadow planet-${name}`}>
             <Link to={`/${name}`} className="flex">
               <div className="card_image">

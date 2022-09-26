@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Article from '../components/Article'
-import { Planet as PlanetType, planets } from '../Model'
+import { Planet as PlanetType, getPlanets } from '../Model'
 
 function Planet() {
   const { planet } = useParams()
   const [planetData, setPlanetData] = useState<PlanetType>()
 
   useEffect(() => {
-    setPlanetData((prev) => planets.find((p) => p.name === planet))
+    setPlanetData((prev) => getPlanets('EN').find((p) => p.name === planet))
   }, [planet])
 
   return (

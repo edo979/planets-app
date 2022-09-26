@@ -7,7 +7,15 @@ export type Planet = {
   data: StringPair[]
 }
 
-export const planets: Planet[] = [
+export const getPlanets = (lang: string | undefined): Planet[] => {
+  if (lang === 'BS') {
+    return planetsBS
+  } else {
+    return planets
+  }
+}
+
+const planets: Planet[] = [
   {
     name: 'sun',
     img: 'assets/images/sun.jpg',
@@ -108,35 +116,6 @@ export const planets: Planet[] = [
     ],
   },
 ]
-
-export const getColors = (planet: string | undefined): string => {
-  const defaultClr = '--clr-primary-100'
-
-  if (!planet) return defaultClr
-
-  switch (planet) {
-    case 'mars':
-      return '--clr-primary-100'
-
-    case 'mercury':
-    case 'jupiter':
-    case 'saturn':
-      return '--clr-primary-200'
-
-    case 'uranus':
-      return '--clr-primary-300'
-
-    case 'neptune':
-    case 'venus':
-      return '--clr-primary-400'
-
-    case 'earth':
-      return '--clr-primary-500'
-
-    default:
-      return defaultClr
-  }
-}
 
 const planetsBS: Planet[] = [
   {
@@ -239,3 +218,32 @@ const planetsBS: Planet[] = [
     ],
   },
 ]
+
+export const getColors = (planet: string | undefined): string => {
+  const defaultClr = '--clr-primary-100'
+
+  if (!planet) return defaultClr
+
+  switch (planet) {
+    case 'mars':
+      return '--clr-primary-100'
+
+    case 'mercury':
+    case 'jupiter':
+    case 'saturn':
+      return '--clr-primary-200'
+
+    case 'uranus':
+      return '--clr-primary-300'
+
+    case 'neptune':
+    case 'venus':
+      return '--clr-primary-400'
+
+    case 'earth':
+      return '--clr-primary-500'
+
+    default:
+      return defaultClr
+  }
+}
