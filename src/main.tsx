@@ -14,6 +14,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route index element={<Home />} />
           <Route path="/:planet" element={<Planet />} />
         </Route>
+        <Route path="/lang/:lang" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path=":planet" element={<Planet />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

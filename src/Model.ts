@@ -8,7 +8,7 @@ export type Planet = {
 }
 
 export const getPlanets = (lang: string | undefined): Planet[] => {
-  if (lang === 'BS') {
+  if (lang === 'bs') {
     return planetsBS
   } else {
     return planets
@@ -18,7 +18,7 @@ export const getPlanets = (lang: string | undefined): Planet[] => {
 const planets: Planet[] = [
   {
     name: 'sun',
-    img: 'assets/images/sun.jpg',
+    img: '/assets/images/sun.jpg',
     desc: `The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.`,
     data: [
       ['Distance to Earth', '149.6 million km'],
@@ -29,7 +29,7 @@ const planets: Planet[] = [
   },
   {
     name: 'mercury',
-    img: 'assets/images/mercury.jpg',
+    img: '/assets/images/mercury.jpg',
     desc: `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.`,
     data: [
       ['Distance from Sun', '58 million km'],
@@ -40,7 +40,7 @@ const planets: Planet[] = [
   },
   {
     name: 'venus',
-    img: 'assets/images/venus.jpg',
+    img: '/assets/images/venus.jpg',
     desc: `Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight.`,
     data: [
       ['Distance from Sun', '108.2 million km'],
@@ -51,7 +51,7 @@ const planets: Planet[] = [
   },
   {
     name: 'earth',
-    img: 'assets/images/earth.jpg',
+    img: '/assets/images/earth.jpg',
     desc: `Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers.`,
     data: [
       ['Distance from Sun', '149.6 million km'],
@@ -62,7 +62,7 @@ const planets: Planet[] = [
   },
   {
     name: 'mars',
-    img: 'assets/images/mars.jpg',
+    img: '/assets/images/mars.jpg',
     desc: `Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war.`,
     data: [
       ['Distance from Sun', '227.9 million km'],
@@ -73,7 +73,7 @@ const planets: Planet[] = [
   },
   {
     name: 'jupiter',
-    img: 'assets/images/jupiter.jpg',
+    img: '/assets/images/jupiter.jpg',
     desc: `Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun.`,
     data: [
       ['Distance from Sun', '778.5 million km'],
@@ -84,7 +84,7 @@ const planets: Planet[] = [
   },
   {
     name: 'saturn',
-    img: 'assets/images/saturn.jpg',
+    img: '/assets/images/saturn.jpg',
     desc: `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.`,
     data: [
       ['Distance from Sun', '1.434 billion km'],
@@ -95,7 +95,7 @@ const planets: Planet[] = [
   },
   {
     name: 'uranus',
-    img: 'assets/images/uranus.jpg',
+    img: '/assets/images/uranus.jpg',
     desc: `Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares, grandfather of Zeus and father of Cronus. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.`,
     data: [
       ['Distance from Sun', '2.871 billion km'],
@@ -106,7 +106,7 @@ const planets: Planet[] = [
   },
   {
     name: 'neptune',
-    img: 'assets/images/neptune.jpg',
+    img: '/assets/images/neptune.jpg',
     desc: `Neptune is the eighth planet from the Sun and the farthest known solar planet. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus.`,
     data: [
       ['Distance from Sun', '4.495 billion km'],
@@ -120,7 +120,7 @@ const planets: Planet[] = [
 const planetsBS: Planet[] = [
   {
     name: 'sun',
-    img: 'assets/images/sun.jpg',
+    img: '/assets/images/sun.jpg',
     desc: `The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.`,
     data: [
       ['Distance to Earth', '149.6 million km'],
@@ -131,7 +131,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'mercury',
-    img: 'assets/images/mercury.jpg',
+    img: '/assets/images/mercury.jpg',
     desc: `Merkur je najmanji planet u Sunčevom sistemu i najbliži Suncu. Njegova orbita oko Sunca traje 87,97 zemaljskih dana, što je najkraće od svih Sunčevih planeta.`,
     data: [
       ['Udaljenost od Sunca', '58 million km'],
@@ -142,7 +142,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'venus',
-    img: 'assets/images/venus.jpg',
+    img: '/assets/images/venus.jpg',
     desc: `Venera je drugi planet od Sunca, a ime je dobila po rimskoj božici ljubavi i ljepote. Kao najsjajniji prirodni objekt na Zemljinom noćnom nebu nakon Mjeseca, Venera može bacati sjene i može biti vidljiva golim okom usred bijela dana.`,
     data: [
       ['Udaljenost od Sunca', '108.2 million km'],
@@ -153,7 +153,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'earth',
-    img: 'assets/images/earth.jpg',
+    img: '/assets/images/earth.jpg',
     desc: `Zemlja je treći planet od Sunca i jedini astronomski objekt za koji se zna da sadrži život. Dok se velike količine vode mogu naći u cijelom Sunčevom sustavu, samo Zemlja održava tekuću površinsku vodu. Otprilike 71% Zemljine površine sastoji se od oceana, što je mnogo u odnosu na Zemljin polarni led, jezera i rijeke.`,
     data: [
       ['Udaljenost od Sunca', '149.6 million km'],
@@ -164,7 +164,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'mars',
-    img: 'assets/images/mars.jpg',
+    img: '/assets/images/mars.jpg',
     desc: `Mars je četvrti planet od Sunca i drugi najmanji planet u Sunčevom sistemu, a veći je samo od Merkura. U engleskom jeziku, Mars je dobio ime po rimskom bogu rata.`,
     data: [
       ['Udaljenost od Sunca', '227.9 million km'],
@@ -175,7 +175,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'jupiter',
-    img: 'assets/images/jupiter.jpg',
+    img: '/assets/images/jupiter.jpg',
     desc: `Jupiter je peti planet od Sunca i najveći u Sunčevom sistemu. To je plinoviti div čija je masa dva i pol puta veća od svih ostalih planeta u Sunčevom sistemu zajedno, ali nešto manja od jedne hiljade mase Sunca.`,
     data: [
       ['Udaljenost od Sunca', '778.5 million km'],
@@ -186,7 +186,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'saturn',
-    img: 'assets/images/saturn.jpg',
+    img: '/assets/images/saturn.jpg',
     desc: `Saturn je šesti planet od Sunca i drugi po veličini u Sunčevom sistemu, nakon Jupitera. To je plinoviti div s prosječnim radijusom koji je oko devet i pol puta veći od Zemljinog. Ima samo jednu osminu prosječne gustoće Zemlje; međutim, sa svojim većim volumenom, Saturn je preko 95 puta masivniji.`,
     data: [
       ['Udaljenost od Sunca', '1.434 billion km'],
@@ -197,7 +197,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'uranus',
-    img: 'assets/images/uranus.jpg',
+    img: '/assets/images/uranus.jpg',
     desc: `Uran je sedmi planet od Sunca. Njegovo ime je od grčkog boga neba, Urana, koji je, prema grčkoj mitologiji, bio Aresov pradjed, Zeusov djed i Kronov otac. Ima treći najveći planetarni radijus i četvrtu najveću planetarnu masu u Sunčevom sistemu.`,
     data: [
       ['Udaljenost od Sunca', '2.871 billion km'],
@@ -208,7 +208,7 @@ const planetsBS: Planet[] = [
   },
   {
     name: 'neptune',
-    img: 'assets/images/neptune.jpg',
+    img: '/assets/images/neptune.jpg',
     desc: `Neptun je osmi planet od Sunca i najudaljeniji poznati solarni planet. U Sunčevom sistemu, to je četvrti najveći planet po promjeru, treći najmasovniji planet i najgušći divovski planet. Ima 17 puta veću masu od Zemlje i nešto masivniji od svog gotovo blizanca Urana.`,
     data: [
       ['Udaljenost od Sunca', '4.495 billion km'],
