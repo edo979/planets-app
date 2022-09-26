@@ -137,3 +137,105 @@ export const getColors = (planet: string | undefined): string => {
       return defaultClr
   }
 }
+
+const planetsBS: Planet[] = [
+  {
+    name: 'sun',
+    img: 'assets/images/sun.jpg',
+    desc: `The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.`,
+    data: [
+      ['Distance to Earth', '149.6 million km'],
+      ['Radius', '696,340 km'],
+      ['Surface temperature', '5504.85 °C'],
+      ['Age', '4.603 billion years'],
+    ],
+  },
+  {
+    name: 'mercury',
+    img: 'assets/images/mercury.jpg',
+    desc: `Merkur je najmanji planet u Sunčevom sistemu i najbliži Suncu. Njegova orbita oko Sunca traje 87,97 zemaljskih dana, što je najkraće od svih Sunčevih planeta.`,
+    data: [
+      ['Udaljenost od Sunca', '58 million km'],
+      ['Radijus', '2,439.7 km'],
+      ['Masa', '3.285 × 10^23 kg (0.055 M⊕)'],
+      ['Površina', '74.8 million km²'],
+    ],
+  },
+  {
+    name: 'venus',
+    img: 'assets/images/venus.jpg',
+    desc: `Venera je drugi planet od Sunca, a ime je dobila po rimskoj božici ljubavi i ljepote. Kao najsjajniji prirodni objekt na Zemljinom noćnom nebu nakon Mjeseca, Venera može bacati sjene i može biti vidljiva golim okom usred bijela dana.`,
+    data: [
+      ['Udaljenost od Sunca', '108.2 million km'],
+      ['Radijus', '6,051.8 km'],
+      ['Masa', '4.867 × 10^24 kg (0.815 M⊕)'],
+      ['Trajanje dana', '116d 18h 0m'],
+    ],
+  },
+  {
+    name: 'earth',
+    img: 'assets/images/earth.jpg',
+    desc: `Zemlja je treći planet od Sunca i jedini astronomski objekt za koji se zna da sadrži život. Dok se velike količine vode mogu naći u cijelom Sunčevom sustavu, samo Zemlja održava tekuću površinsku vodu. Otprilike 71% Zemljine površine sastoji se od oceana, što je mnogo u odnosu na Zemljin polarni led, jezera i rijeke.`,
+    data: [
+      ['Udaljenost od Sunca', '149.6 million km'],
+      ['Radijus', '6,371 km'],
+      ['Masa', '5.972 × 10^24 kg'],
+      ['Starost', '4.543 billion years'],
+    ],
+  },
+  {
+    name: 'mars',
+    img: 'assets/images/mars.jpg',
+    desc: `Mars je četvrti planet od Sunca i drugi najmanji planet u Sunčevom sistemu, a veći je samo od Merkura. U engleskom jeziku, Mars je dobio ime po rimskom bogu rata.`,
+    data: [
+      ['Udaljenost od Sunca', '227.9 million km'],
+      ['Radijus', '3,389.5 km'],
+      ['Masa', '6.39 × 10^23 kg (0.107 M⊕)'],
+      ['Površina', '144.8 million km²'],
+    ],
+  },
+  {
+    name: 'jupiter',
+    img: 'assets/images/jupiter.jpg',
+    desc: `Jupiter je peti planet od Sunca i najveći u Sunčevom sistemu. To je plinoviti div čija je masa dva i pol puta veća od svih ostalih planeta u Sunčevom sistemu zajedno, ali nešto manja od jedne hiljade mase Sunca.`,
+    data: [
+      ['Udaljenost od Sunca', '778.5 million km'],
+      ['Radijus', '69,911 km'],
+      ['Masa', '1.898 × 10^27 kg (317.8 M⊕)'],
+      ['Orbitalni period', '12 years'],
+    ],
+  },
+  {
+    name: 'saturn',
+    img: 'assets/images/saturn.jpg',
+    desc: `Saturn je šesti planet od Sunca i drugi po veličini u Sunčevom sistemu, nakon Jupitera. To je plinoviti div s prosječnim radijusom koji je oko devet i pol puta veći od Zemljinog. Ima samo jednu osminu prosječne gustoće Zemlje; međutim, sa svojim većim volumenom, Saturn je preko 95 puta masivniji.`,
+    data: [
+      ['Udaljenost od Sunca', '1.434 billion km'],
+      ['Radijus', '58,232 km'],
+      ['Masa', '5.683 × 10^26 kg (95.16 M⊕)'],
+      ['Starost', '4.503 billion years'],
+    ],
+  },
+  {
+    name: 'uranus',
+    img: 'assets/images/uranus.jpg',
+    desc: `Uran je sedmi planet od Sunca. Njegovo ime je od grčkog boga neba, Urana, koji je, prema grčkoj mitologiji, bio Aresov pradjed, Zeusov djed i Kronov otac. Ima treći najveći planetarni radijus i četvrtu najveću planetarnu masu u Sunčevom sistemu.`,
+    data: [
+      ['Udaljenost od Sunca', '2.871 billion km'],
+      ['Radijus', '25,362 km'],
+      ['Masa', '8.681 × 10^25 kg (14.54 M⊕)'],
+      ['Orbitalni period', '84 years'],
+    ],
+  },
+  {
+    name: 'neptune',
+    img: 'assets/images/neptune.jpg',
+    desc: `Neptun je osmi planet od Sunca i najudaljeniji poznati solarni planet. U Sunčevom sistemu, to je četvrti najveći planet po promjeru, treći najmasovniji planet i najgušći divovski planet. Ima 17 puta veću masu od Zemlje i nešto masivniji od svog gotovo blizanca Urana.`,
+    data: [
+      ['Udaljenost od Sunca', '4.495 billion km'],
+      ['Radijus', '24,622 km'],
+      ['Masa', '1.024 × 10^26 kg (17.15 M⊕)'],
+      ['Orbitalni period', '165 years'],
+    ],
+  },
+]
