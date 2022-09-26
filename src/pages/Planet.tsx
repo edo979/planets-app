@@ -4,11 +4,11 @@ import Article from '../components/Article'
 import { Planet as PlanetType, getPlanets } from '../Model'
 
 function Planet() {
-  const { planet } = useParams()
+  const { planet, lang } = useParams()
   const [planetData, setPlanetData] = useState<PlanetType>()
 
   useEffect(() => {
-    setPlanetData((prev) => getPlanets('en').find((p) => p.name === planet))
+    setPlanetData((prev) => getPlanets(lang).find((p) => p.name === planet))
   }, [planet])
 
   return (

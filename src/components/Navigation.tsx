@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import { getColors } from '../Model'
 
@@ -8,9 +8,11 @@ type Props = {
 }
 
 function Navigation({ isVisible, hideNav }: Props) {
-  const { planet } = useParams()
+  const { planet, lang } = useParams()
+  const [linkPrefix, setLinkPrefix] = useState<string | undefined>('')
 
   useEffect(() => {
+    console.log('form nav PLANET')
     document.documentElement.style.setProperty(
       '--clr-primary',
       `var(${getColors(planet)})`
@@ -18,11 +20,16 @@ function Navigation({ isVisible, hideNav }: Props) {
     hideNav()
   }, [planet])
 
+  useEffect(() => {
+    console.log('form nav LANG')
+    setLinkPrefix((prev) => (lang ? `/lang/${lang}` : ''))
+  }, [lang])
+
   return (
     <ul className={`navbar_list ${isVisible ? 'show' : ''}`}>
       <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
-          to={'/mercury'}
+          to={linkPrefix + '/mercury'}
           className={({ isActive }) =>
             `navbar_link${isActive ? ' active' : ''}`
           }
