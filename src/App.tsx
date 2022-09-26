@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link, useParams } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import './scss/style.scss'
 
 function App() {
   const [toggleNav, setToggleNav] = useState<Boolean>(false)
+
+  const { lang } = useParams()
 
   const hideNav = (): void => setToggleNav(false)
 
@@ -12,7 +14,7 @@ function App() {
     <>
       <header className="flex">
         <h1>
-          <Link to={'/'}>Planets</Link>
+          <Link to={lang ? `/lang/${lang}/` : '/'}>Planets</Link>
         </h1>
         <nav className="navbar">
           <Navigation isVisible={toggleNav} hideNav={hideNav} />

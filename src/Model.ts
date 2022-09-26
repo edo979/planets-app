@@ -30,6 +30,7 @@ export const getPlanetsNames = (
     arrayToFilter = planets
   }
 
+  // return array of id, name, without sun (planet only)
   return arrayToFilter
     .map(({ id, name }) => ({
       id,

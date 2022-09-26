@@ -1,13 +1,15 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { getPlanets } from '../Model'
 
 function Home() {
+  const { lang } = useParams()
+
   return (
     <main>
       <ul className="card-list | mt-2">
-        {getPlanets('EN').map(({ name, img }) => (
+        {getPlanets(lang).map(({ id, name, img }) => (
           <li key={name} className={`card | b-shadow planet-${name}`}>
-            <Link to={`/${name}`} className="flex">
+            <Link to={lang ? `/lang/${lang}/${id}` : `/${id}`} className="flex">
               <div className="card_image">
                 <img src={img} alt={name} className="image-cover" />
               </div>
