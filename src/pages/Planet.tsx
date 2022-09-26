@@ -8,7 +8,7 @@ function Planet() {
   const [planetData, setPlanetData] = useState<PlanetType>()
 
   useEffect(() => {
-    setPlanetData((prev) => getPlanets(lang).find((p) => p.name === planet))
+    setPlanetData((prev) => getPlanets(lang).find((p) => p.id === planet))
   }, [planet])
 
   return (

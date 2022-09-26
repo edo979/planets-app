@@ -14,7 +14,14 @@ export const getPlanets = (lang: string | undefined): Planet[] => {
   }
 }
 
-export const getPlanetsNames = (lang: string | undefined): Array<string> => {
+type PlanetName = {
+  id: string
+  name: string
+}
+
+export const getPlanetsNames = (
+  lang: string | undefined
+): Array<PlanetName> => {
   let arrayToFilter = []
 
   if (lang === 'bs') {
@@ -23,7 +30,12 @@ export const getPlanetsNames = (lang: string | undefined): Array<string> => {
     arrayToFilter = planets
   }
 
-  return arrayToFilter.map((planet) => planet.name)
+  return arrayToFilter
+    .map(({ id, name }) => ({
+      id,
+      name,
+    }))
+    .filter((planet) => planet.id !== 'sun')
 }
 
 const planets: Planet[] = [
