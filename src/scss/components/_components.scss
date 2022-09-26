@@ -15,6 +15,15 @@ header {
 .content {
   &_image {
     height: 400px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+
+      background: radial-gradient(transparent 45%, hsl(0, 0%, 0%, 0.8) 88%);
+    }
   }
 
   &_text-container {
