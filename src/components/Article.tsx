@@ -12,7 +12,7 @@ function Article({ content }: Props) {
       </aside>
 
       <article className="content_text-container">
-        <h2 className="content_title">{content?.name}</h2>
+        <h2 className="content_title">{content?.nameTranslate}</h2>
         <p className="content_text">{content?.desc}</p>
       </article>
     </section>

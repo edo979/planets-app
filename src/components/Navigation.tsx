@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
-import { getColors } from '../Model'
+import { getColors, getPlanetName } from '../Model'
 
 type Props = {
   isVisible: Boolean
@@ -12,7 +12,6 @@ function Navigation({ isVisible, hideNav }: Props) {
   const [linkPrefix, setLinkPrefix] = useState<string | undefined>('')
 
   useEffect(() => {
-    console.log('form nav PLANET')
     document.documentElement.style.setProperty(
       '--clr-primary',
       `var(${getColors(planet)})`
@@ -21,7 +20,6 @@ function Navigation({ isVisible, hideNav }: Props) {
   }, [planet])
 
   useEffect(() => {
-    console.log('form nav LANG')
     setLinkPrefix((prev) => (lang ? `/lang/${lang}` : ''))
   }, [lang])
 
@@ -34,7 +32,7 @@ function Navigation({ isVisible, hideNav }: Props) {
             `navbar_link${isActive ? ' active' : ''}`
           }
         >
-          Mercury
+          {getPlanetName(planet, lang)}
         </NavLink>
       </li>
       <li className="navbar_item | skew-box b-shadow hover-navigation">
