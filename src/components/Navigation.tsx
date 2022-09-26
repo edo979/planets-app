@@ -20,7 +20,7 @@ function Navigation({ isVisible, hideNav }: Props) {
 
   return (
     <ul className={`navbar_list ${isVisible ? 'show' : ''}`}>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/mercury'}
           className={({ isActive }) =>
@@ -30,7 +30,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Mercury
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/venus'}
           className={({ isActive }) =>
@@ -40,7 +40,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Venus
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/earth'}
           className={({ isActive }) =>
@@ -50,7 +50,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Earth
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/mars'}
           className={({ isActive }) =>
@@ -60,7 +60,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Mars
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/jupiter'}
           className={({ isActive }) =>
@@ -70,7 +70,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Jupiter
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/saturn'}
           className={({ isActive }) =>
@@ -80,7 +80,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Saturn
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/uranus'}
           className={({ isActive }) =>
@@ -90,7 +90,7 @@ function Navigation({ isVisible, hideNav }: Props) {
           Uranus
         </NavLink>
       </li>
-      <li className="navbar_item | skew-box b-shadow">
+      <li className="navbar_item | skew-box b-shadow hover-navigation">
         <NavLink
           to={'/neptune'}
           className={({ isActive }) =>

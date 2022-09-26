@@ -63,7 +63,9 @@ footer {
   --t-skew: 30deg;
   transform: skew(calc(var(--t-skew) * -1));
 
-  > * {
+  > *,
+  &.hover-navigation::before,
+  &.hover-navigation::after {
     transform: skew(var(--t-skew));
   }
 }
@@ -80,4 +82,55 @@ footer {
 
   object-fit: cover;
   object-position: center;
+}
+
+.hover-navigation {
+  position: relative;
+
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: scale;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background-color: hsl(var(--clr-primary));
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: right;
+  }
+
+  &:before {
+    right: 20%;
+    top: 0;
+    translate: (0 -50%);
+  }
+
+  &:after {
+    right: 70%;
+    bottom: 0;
+    translate: (0 50%);
+  }
+
+  &:is(:hover, :focus-visible) {
+    scale: 1.1;
+    box-shadow: 0 0 30px 15px hsl(var(--clr-primary), 0.2),
+      0 0 5px 5px hsl(var(--clr-primary), 0.3),
+      inset 0 0 5px 5px hsl(var(--clr-primary), 0.3);
+
+    &:before {
+      right: 70%;
+      box-shadow: 0 0 20px 10px hsl(var(--clr-primary), 0.4);
+    }
+    &:after {
+      right: 20%;
+      box-shadow: 0 0 20px 10px hsl(var(--clr-primary), 0.4);
+    }
+  }
 }
