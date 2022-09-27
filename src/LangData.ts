@@ -1,7 +1,7 @@
 const bs: Array<[string, string]> = [
   ['Planets', 'Planete'],
   ['Photo by', 'Fotografija od'],
-  ['on', 'od'],
+  ['on', 'sa'],
 ]
 
 export const getTranslate = (

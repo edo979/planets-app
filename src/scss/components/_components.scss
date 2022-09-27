@@ -9,6 +9,11 @@ header {
   h1 a {
     text-decoration: none;
     color: inherit;
+
+    &:is(:hover, :focus-visible) {
+      font-style: italic;
+      font-weight: normal;
+    }
   }
 }
 
@@ -127,7 +132,7 @@ footer {
 .hover-navigation {
   position: relative;
 
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
   transition-property: scale;
 
@@ -142,19 +147,19 @@ footer {
 
     background: none;
 
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
     transition-property: right;
   }
 
   &:before {
-    right: 20%;
+    right: 10%;
     top: 0;
     translate: (0 -50%);
   }
 
   &:after {
-    right: 70%;
+    right: 80%;
     bottom: 0;
     translate: (0 50%);
   }
@@ -167,11 +172,11 @@ footer {
       inset 0 0 5px 5px hsl(var(--clr-primary), 0.3);
 
     &:before {
-      right: 70%;
+      right: 80%;
       box-shadow: 0 0 20px 10px hsl(var(--clr-primary), 0.4);
     }
     &:after {
-      right: 20%;
+      right: 10%;
       box-shadow: 0 0 20px 10px hsl(var(--clr-primary), 0.4);
     }
   }
