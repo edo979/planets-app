@@ -135,11 +135,12 @@ footer {
   &:after {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    border: none;
 
-    background-color: hsl(var(--clr-primary));
+    background: none;
 
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -160,6 +161,7 @@ footer {
 
   &:is(:hover, :focus-visible) {
     scale: 1.1;
+
     box-shadow: 0 0 30px 15px hsl(var(--clr-primary), 0.2),
       0 0 5px 5px hsl(var(--clr-primary), 0.3),
       inset 0 0 5px 5px hsl(var(--clr-primary), 0.3);
