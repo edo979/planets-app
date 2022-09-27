@@ -10,6 +10,7 @@
 
   .planet-sun {
     grid-area: 1 / 1 / -1 / -1;
+    background: none !important;
 
     a {
       height: 100%;
@@ -53,10 +54,21 @@
 
 .card {
   --f-direction: column;
+  --l-gradinet: linear-gradient(
+    90deg,
+    hsl(var(--clr-primary-100), 0.25),
+    hsl(var(--clr-primary-200), 0.25),
+    hsl(var(--clr-primary-300), 0.25),
+    hsl(var(--clr-primary-100), 0.25)
+  );
 
+  position: relative;
   padding: 1rem;
   border-radius: 5px;
-  background-color: hsl(var(--clr-primary-100), 0.3);
+  z-index: 1;
+
+  background: var(--l-gradinet);
+  background-size: 400%;
 
   &.planet-sun {
     padding: 0;
@@ -98,5 +110,40 @@
 
   &_body {
     margin-top: auto;
+  }
+
+  &:not([class*='sun']) {
+    &:before {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      border-radius: 50px;
+      z-index: -1;
+
+      background: var(--l-gradinet);
+      background-size: 400%;
+      filter: blur(20px);
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+
+    &:is(:hover, :focus) {
+      animation: animate-gradient 8s linear infinite;
+
+      &:before {
+        opacity: 0.8;
+
+        animation: animate-gradient 8s linear infinite;
+      }
+    }
+  }
+
+  @keyframes animate-gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
   }
 }
