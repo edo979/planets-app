@@ -33,15 +33,25 @@ function App() {
 
       <Outlet />
 
-      <footer>
-        {`${getTranslate(lang, 'Photo by')}: `}
-        <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-          NASA
-        </a>{' '}
-        {`${getTranslate(lang, 'on')}: `}
-        <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-          Unsplash
-        </a>
+      <footer className="flex">
+        <div className="language | skew-box">
+          <select name="lan" id="lang">
+            <option value="en">English</option>
+            <option value="bs">Bosanski</option>
+          </select>
+        </div>
+        <div className="photo-by | skew-box">
+          <p>
+            {`${getTranslate(lang, 'Photo by')}: `}
+            <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              NASA
+            </a>{' '}
+            {`${getTranslate(lang, 'on')}: `}
+            <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </p>
+        </div>
       </footer>
     </>
   )
