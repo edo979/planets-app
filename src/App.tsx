@@ -1,27 +1,29 @@
 import { useState } from 'react'
-import { Outlet, Link, useParams, useNavigate } from 'react-router-dom'
-
+import {
+  Outlet,
+  Link,
+  useParams,
+  useNavigate,
+  useLocation,
+} from 'react-router-dom'
 import Navigation from './components/Navigation'
-
 import { getTranslate } from './LangData'
-
 import './scss/style.scss'
 
 function App() {
   const [toggleNav, setToggleNav] = useState<Boolean>(false)
-  const { lang } = useParams()
+  const { lang, planet } = useParams()
   const navigate = useNavigate()
+  const currentLocation = useLocation().pathname
 
   const hideNav = (): void => setToggleNav(false)
-
-  console.log(lang)
 
   const handleLangChange = (event: any) => {
     const lang = event.target.value
     if (lang !== 'en') {
-      navigate(`/lang/${lang}`)
+      navigate(`/lang/${lang}/${planet ? planet : ''}`)
     } else {
-      navigate('/')
+      navigate(`/${planet ? planet : ''}`)
     }
   }
 

@@ -9,7 +9,7 @@ function Planet() {
 
   useEffect(() => {
     setPlanetData((prev) => getPlanets(lang).find((p) => p.id === planet))
-  }, [planet])
+  }, [planet, lang])
 
   return (
     <main>
