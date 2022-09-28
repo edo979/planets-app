@@ -79,14 +79,17 @@
   .navbar {
     &_list {
       display: none;
-      position: fixed;
-      z-index: 2;
-      inset: 0;
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      right: 0;
 
       flex-direction: column;
       flex-wrap: nowrap;
-      gap: 1rem;
-      padding: 3rem 0;
+      gap: 2rem;
+      justify-content: start;
+      padding-block: 5rem;
 
       background-color: hsl(var(--clr-neutral-100));
       box-shadow: 0 20px 20px hsl(var(--clr-neutral-100), 0.8),
@@ -99,14 +102,16 @@
 
     &_item {
       width: 120px;
+      max-height: 50px;
+      align-self: center;
       padding-block: 0.5rem;
-      margin-inline: auto;
+
       text-align: center;
     }
 
     &_toggle {
       display: block;
-      z-index: 3;
+      z-index: 4;
     }
   }
 
@@ -123,5 +128,9 @@
     h2 {
       font-size: var(--fs-400);
     }
+  }
+
+  footer {
+    --f-direction: column;
   }
 }
